@@ -78,10 +78,10 @@
                             <h5>${product.name}</h5>
                             <p>${product.description}</p>
                             <p>Price: $${product.price}</p>
+                            <img src="http://127.0.0.1:8000/${product.image}/"/" alt="${product.name}" class="card-img-top" style="max-width: 30%; height: auto;">
                             <p class="card-text">Category: ${product.category.map(cat => cat.name).join(', ')}</p>
                             <button class="btn btn-info" onclick="viewProduct(${product.id})">View</button>
                             <button class="btn btn-danger" onclick="deleteProduct(${product.id})">Delete</button>
-                            <img src="http://127.0.0.1:8000/products/${product.image}/"/>
                         </li>
                     `;
                 });
